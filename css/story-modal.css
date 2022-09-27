@@ -1,0 +1,10 @@
+.modal__video {
+    position: relative;
+    margin: 0 auto;
+    display: block;
+
+    background-color: var(--white);
+    
+    width: 420px;
+    height: 580px;
+}

@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@300;400;500&display=swap"
+    rel="stylesheet">
+    <title>Personal Blog</title>
+</head>
+<body>
+    <div class="page">
+    
+        <header class="header">
+            <div class="header__left">
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="index.html" class="nav__link">Главная</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link has-subnav">Статьи</a>
+
+                            <ul class="subnav">
+                                <li>
+                                    <a href="post.html" class="subnav__link">Создание сайта</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="subnav__link">Интернет-маркетинг</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="subnav__link">Продвижение видео</a>
+                                </li>
+                            </ul>
+
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Обо мне</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Реклама</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <button class="burger" type="button" id="sidebarToggle">
+                    <span></span>
+                </button>
+
+            </div>
+            <div class="header__right">
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="profile.html" class="nav__link">Профиль</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="signin.html" class="nav__link">Войти</a>
+                        </li>
+                    </ul>
+                </nav>
+                <form action="search.html" method="get" class="search">
+                    <input type="text" placeholder="Поиск по блогу" class="search__input">
+                </form>
+            </div>
+        </header>
+        
+        <aside class="sidebar" id="sidebar">
+        
+            <div class="sidebar__header">
+                <img src="image/sidebar-bg.jpg" alt="image">
+            </div>
+        
+            <div class="sidebar__content">
+                <div class="profile">
+                    <div class="profile__avatar"></div>
+        
+                    <div class="profile__header">
+                        <div class="profile__name">
+                            Andrey
+                        </div>
+                        <div class="profile__prof">
+                            блог front-end разработчика
+                        </div>
+                    </div>
+        
+                    <ul class="social">
+                        <li class="social__item">
+                            <a href="#" class="social__link" target="_blank">
+                                <img src="svg/instagram.svg" alt="instagram">
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="#" class="social__link" target="_blank">
+                                <img src="svg/vk.svg" alt="vk">
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="#" class="social__link" target="_blank">
+                                <img src="svg/pinterest.svg" alt="pinterest">
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="profile__text">
+                        <p>
+                            Front-end разработчик. Практик верстки сайтов.
+                            Созданием сайтов занимаюсь с 2012 года. Работал в нескольких
+                            ИТ компаниях и наработал более 10 000 часов в создании сайтов
+                            различной сложности.
+                        </p>
+                    </div>
+                </div>
+        
+                <nav class="nav nav--mobile">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Главная</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link has-subnav">Статьи</a>
+        
+                            <ul class="subnav">
+                                <li>
+                                    <a href="post.html" class="subnav__link">Создание сайта</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="subnav__link">Интернет-маркетинг</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="subnav__link">Продвижение видео</a>
+                                </li>
+                            </ul>
+        
+                        </li>
+                        <li class="nav__item">
+                            <a href="text.html" class="nav__link">Обо мне</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="text.html" class="nav__link">Реклама</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="profile.html" class="nav__link">Профиль</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="signin.html" class="nav__link">Войти</a>
+                        </li>
+                    </ul>
+                </nav>
+        
+            </div>
+        
+            <div class="sidebar__footer">
+                <a class="btn red-btn" href="works.html">Мои работы</a>
+                <button type="button" class="btn blue-btn" data-modal="contact-modal">Написать мне</button>
+            </div>
+        
+        </aside>
+
+        <main class="main">
+            <div class="container">
+                <article class="post">
+
+                    <div class="post__actions">
+                        <a href="index.html">вернуться назад</a>
+                        <a href="#">
+                            поделиться<img class="post__actions-icon" src="svg/share 1.svg" alt="поделиться">
+                        </a>
+                    </div>
+                    <div class="post__header post__header--open">
+                        <h2 class="post__title post__title--mb0">
+                            Обо мне
+                        </h2>
+                        <ul class="post__data">
+                            <li class="post__data-item">
+                                <time datetime="2020-06-21">21.06.2020</time>
+                            </li>
+                            <li class="post__data-item">
+                                <a href="#">Создание сайтов</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="post-content">
+                        <div class="post__text">
+                            <h2>Title</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam perspiciatis architecto voluptatibus harum alias ipsam corporis iste, maxime blanditiis dolorem aliquam aspernatur non molestias ullam sequi perferendis tenetur. Ea, eveniet.</p>
+                            <h3>Title</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam odio architecto accusantium fuga quas a, ab eligendi dolorum maxime officia inventore ipsa eveniet! Excepturi, ducimus accusantium ipsum doloribus nobis illum.</p>
+                            <p>
+                                <img src="image/post-img.jpg" alt="">
+                            </p>
+                            <h4>Title</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem laudantium error accusamus voluptas sed necessitatibus rem, dolores ad officiis vero omnis quaerat perspiciatis voluptatum tenetur culpa. Nihil et totam suscipit?</p>
+                            <p>
+                                <span class="fr-video">
+                                    <iframe src="https://www.youtube.com/embed/ltMSrSis9ww" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </span>
+                            </p>
+                        </div>
+                       
+                            <h3 class="post__subtitle">Обсуждение</h3>
+
+                            <form action="/" method="post" class="form">
+                                <div class="form-group">
+                                    <textarea name="comment-text" placeholder="Текст комментария" class="form__control form__control--textarea"></textarea>
+                                    <span class="form__line"></span>
+                                </div>
+                                <button class="btn blue-btn btn--rounded btn--sm" type="submit">Отправить</button>
+                            </form>
+                            
+                            <ul class="comments">
+                                <li class="comments__item">
+                                    <div class="comments__header">
+                                        <img src="image/avatar-sidebar.jpg" alt="avatar" class="comments__avatar">
+
+                                        <div class="comments__author">
+                                            <div class="comments__name">
+                                                Владислав Шадчинев
+                                            </div>
+                                            <time class="comments__pubdate" datetime="2020-06-21">
+                                                1 неделю назад
+                                            </time>
+                                        </div>
+
+                                    </div>
+                                    <div class="comments__text">
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt, tempore quia optio cum officiis veritatis similique quo tenetur animi quisquam, deserunt aperiam et corrupti repellendus provident ipsa natus doloribus incidunt.
+                                    </div>
+                                    <button type="button" class="comments__reply">Ответить</button>
+                                    
+
+                                    <ul class="comments__response">
+                                        <li class="comments__item">
+                                            <div class="comments__header">
+                                                <img src="image/post.png" alt="avatar" class="comments__avatar">
+        
+                                                <div class="comments__author">
+                                                    <div class="comments__name">
+                                                        Джонни
+                                                    </div>
+                                                    <time class="comments__pubdate" datetime="2020-06-21">
+                                                        1 неделю назад
+                                                    </time>
+                                                </div>
+        
+                                            </div>
+                                            <div class="comments__text">
+                                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt, tempore quia optio cum officiis veritatis similique quo tenetur animi quisquam, deserunt aperiam et corrupti repellendus provident ipsa natus doloribus incidunt.
+                                            </div>
+                                            <button type="button" class="comments__reply">Ответить</button>                                   
+                                        </li>
+                                    </ul>
+                                    
+                                </li>
+                            </ul>
+                    </div>
+                    
+                </article>
+            </div>
+        </main>
+        
+    </div>
+
+    <div class="modal">
+        <div class="modal__content">
+
+         <button type="button" class="modal__close">
+             <img src="svg/cancel.svg" alt="зыкрыть">
+         </button>
+
+         <ul class="social">
+
+             <li class="social__item">
+                 <a href="https://www.instagram.com/vladikletas/" class="social__link">
+                     <img src="svg/facebook (3) 1.svg" alt="facebook">
+                 </a>
+             </li>
+
+             <li class="social__item">
+                 <a href="https://vk.com/id278223319" class="social__link">
+                     <img src="svg/twitter (1) 1.svg" alt="twitter">
+                 </a>
+             </li>
+
+             <li class="social__item">
+                 <a href="#" class="social__link">
+                     <img src="svg/vk 2.svg" alt="vk">
+                 </a>
+             </li>
+
+             <li class="social__item">
+                 <a href="#" class="social__link">
+                     <img src="svg/copy 1.svg" alt="copy">
+                 </a>
+             </li>
+
+         </ul>
+
+        </div>         
+    </div>
+
+    <div class="modal" id="contact-modal">
+        <div class="modal__content modal__content--contact">
+
+         <button type="button" class="modal__close">
+             <img src="svg/cancel.svg" alt="зыкрыть">
+         </button>
+
+         <form action="/" class="form" method="post">
+
+             <div class="form-group form-group--md">
+                 <input type="text" class="form__control" placeholder="Ваше имя">
+                 <span class="form__line"></span>
+             </div>
+
+             <div class="form-group form-group--md">
+                 <input type="email" class="form__control" placeholder="Ваш e-mail">
+                 <span class="form__line"></span>
+             </div>
+
+             <div class="form-group form-group--md">
+                 <textarea class="form__control form__control--textarea" placeholder="текст сообщения"></textarea>
+                 <span class="form__line"></span>
+             </div>
+                                
+             <div class="form__footer">
+                 <div class="form-group form-group--md">
+                     <button type="submit" class="btn blue-btn btn--rounded btn--sm">Отправить</button>
+                 </div>
+             </div>
+             
+         </form>
+
+         <ul class="modal__footer">
+             <li>
+                 e-mail: <a href="mailto:info@mywebsite.ru">info@mywebsite.ru</a>
+             </li>
+             <li>
+                 тел: <a href="tel:+94323285622">+943-232-856-22</a>
+             </li>               
+         </ul>
+
+        </div>         
+    </div>
+ 
+    <script src="js/modal.js"></script>
+    <script src="js/mobilenav.js"></script>
+</body>
+</html>

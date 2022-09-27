@@ -1,0 +1,92 @@
+.modal {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    display: none;
+
+    padding: 1rem;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.829);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1010;
+}
+
+.show {
+    display: flex;
+}
+
+.modal__content {
+    position: relative;
+
+    width: 100%;
+    max-width: 500px;
+    padding: 8rem;
+    background-color: rgba(32, 32, 32, 0.849);
+    border-radius: 5px;
+
+    transform: translateY(-50px);
+    transition: transform 200ms ease-in-out;
+}
+
+.modal__content--story {
+    padding: 0;
+    background: none;
+}
+
+.modal__content--contact {
+    padding-bottom: 2.5rem;
+}
+
+.modal__close {
+    padding: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+
+    transition: opacity .2s linear;
+    opacity: .5;
+
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+}
+
+.modal__close:hover {
+    opacity: 1;
+}
+
+.modal__footer {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 4rem;
+    font-size: 1.2rem;
+    color: #B2B2B2;
+}
+
+.modal__footer li {
+    margin: 0 .5rem;
+}
+
+.modal__footer a {
+    color: inherit;
+    text-decoration: underline;
+}
+
+.modal__footer a:hover {
+    text-decoration: none;
+}
+
+/* media cabinet */
+
+@media (max-width: 991px) {
+    .modal__content {
+        padding: 5rem 3rem 3rem;
+    }
+}
